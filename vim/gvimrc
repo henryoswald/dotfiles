@@ -1,0 +1,9 @@
+set anti
+
+color molokai
+
+"set guioptions-=T
+"set guioptions-=L
+"set guioptions-=r
+
+set background=dark

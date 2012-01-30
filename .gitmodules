@@ -1,0 +1,12 @@
+[submodule "solarized"]
+	path = solarized
+	url = https://github.com/sigurdga/gnome-terminal-colors-solarized.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/ctrlp"]
+	path = vim/bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vim/colors"]
+	path = vim/colors
+	url = https://github.com/mrtazz/molokai.vim.git
