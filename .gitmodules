@@ -7,9 +7,6 @@
 [submodule "vim/bundle/ctrlp"]
 	path = vim/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "vim/colors"]
-	path = vim/colors
-	url = https://github.com/mrtazz/molokai.vim.git
 [submodule "vim/bundle/zoomwin"]
 	path = vim/bundle/zoomwin
 	url = https://github.com/vim-scripts/ZoomWin.git
