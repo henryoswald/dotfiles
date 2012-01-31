@@ -6,12 +6,18 @@ filetype on                 " Reenable filetype
 filetype indent on
 filetype plugin on
 
+" Directories for swp files
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup
 
 " Searching
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+
+"turn numbers on
+set number
 
 " Tab completion
 set wildmode=list:longest,list:full
@@ -35,20 +41,41 @@ endif
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
-
-" Directories for swp files
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
-
-
 " Fast editing of the .vimrc
 map <leader>v :e! ~/.vim/vimrc<cr>
 
 " When vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/.vim/vimrc
 
-" NERDTree configuration
+"NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
 
+"ctlp i.e. commandT replacement
 map <Leader>t :CtrlP<Enter>
+
+"set easy motion to single leader rather than double
+let g:EasyMotion_leader_key = '<Leader>'
+
+"for toggling tagbar
+nmap <Leader>m :TagbarToggle<CR>
+
+"resize windows
+if bufwinnr(1)
+  map + <C-W>+
+  map - <C-W>-
+  map < <C-W><
+  map > <C-W>>
+endif
+
+
+"color
+color Tomorrow-Night
+
+
+"NERDcommenter configuration
+"toggle = leader c space
+
+"surround
+"cs'<tag>  = 'this' -> <tag>this</tag>
+"cst' = <tag>this</tag> -> 'this'

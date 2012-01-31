@@ -10,3 +10,57 @@
 [submodule "vim/colors"]
 	path = vim/colors
 	url = https://github.com/mrtazz/molokai.vim.git
+[submodule "vim/bundle/zoomwin"]
+	path = vim/bundle/zoomwin
+	url = https://github.com/vim-scripts/ZoomWin.git
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "vim/bundle/tagbar"]
+	path = vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "vim/bundle/csscolor"]
+	path = vim/bundle/csscolor
+	url = https://github.com/ap/vim-css-color.git
+[submodule "vim/bundle/easymotion"]
+	path = vim/bundle/easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/bundle/surround"]
+	path = vim/bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/coffeescript"]
+	path = vim/bundle/coffeescript
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "vim/bundle/jade"]
+	path = vim/bundle/jade
+	url = https://github.com/digitaltoad/vim-jade.git
+[submodule "vim/bundle/cucumber"]
+	path = vim/bundle/cucumber
+	url = https://github.com/tpope/vim-cucumber.git
+[submodule "vim/bundle/javascript"]
+	path = vim/bundle/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim/bundle/nodejs"]
+	path = vim/bundle/nodejs
+	url = https://github.com/mmalecki/vim-node.js.git
+[submodule "vim/bundle/ruby"]
+	path = vim/bundle/ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "vim/bundle/less"]
+	path = vim/bundle/less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "vim/bundle/markdown"]
+	path = vim/bundle/markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "vim/bundle/git"]
+	path = vim/bundle/git
+	url = https://github.com/tpope/vim-git.git
