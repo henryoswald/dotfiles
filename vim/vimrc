@@ -37,6 +37,8 @@ if has("autocmd")
     \| exe "normal g'\"" | endif
 endif
 
+set visualbell
+
 " Inserts the path of the currently edited file into a command
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
@@ -50,12 +52,10 @@ autocmd! bufwritepost vimrc source ~/.vim/vimrc
 "NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
+let NERDTreeShowBookmarks=1
 
 "ctlp i.e. commandT replacement
 map <Leader>t :CtrlP<Enter>
-
-"set easy motion to single leader rather than double
-let g:EasyMotion_leader_key = '<Leader>'
 
 "for toggling tagbar
 nmap <Leader>m :TagbarToggle<CR>
@@ -72,6 +72,24 @@ endif
 "color
 color Tomorrow-Night
 
+"anti analysed on
+set anti
+
+"set font
+set gfn=Monaco:h13
+
+"hide tool bar and scroll bar
+set guioptions-=T
+set guioptions-=L
+set guioptions-=r"
+
+" MacVIM shift+arrow-keys behavior (required in .vimrc)
+let macvim_hig_shift_movement = 1
+
+
+"Enable syntastic syntax checking
+let g:syntastic_enable_signs=1
+let g:syntastic_quiet_warnings=1"
 
 "NERDcommenter configuration
 "toggle = leader c space
@@ -79,3 +97,22 @@ color Tomorrow-Night
 "surround
 "cs'<tag>  = 'this' -> <tag>this</tag>
 "cst' = <tag>this</tag> -> 'this'
+
+
+if has("autocmd")
+   " Enable file type detection
+   filetype on
+  
+   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
+   autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+   autocmd FileType coffee setlocal ts=4 sts=4 sw=4 expandtab
+   autocmd FileType html setlocal ts=4 sts=4 sw=4 expandtab
+   autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
+   autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
+   autocmd FileType jade setlocal ts=2 sts=2 sw=2 expandtab
+   autocmd FileType scss setlocal ts=2 sts=2 sw=2 expandtab
+   au BufRead,BufNewFile *.tex setf tex
+
+   " Treat .rdf files as XML
+   autocmd BufNewFile,BufRead *.rdf setfiletype xml
+ endif
