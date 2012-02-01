@@ -28,6 +28,9 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,node_modules/*
 " This is likely a bludgeon to solve some other issue, but it works
 set noequalalways
 
+"set leader
+let mapleader=","
+
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
 
@@ -75,8 +78,10 @@ color Tomorrow-Night
 "anti analysed on
 set anti
 
-"set font
-set gfn=Monaco:h13
+"set font if macvim
+if has("gui_macvim")
+  set gfn=Monaco:h13
+endif
 
 "hide tool bar and scroll bar
 set guioptions-=T
