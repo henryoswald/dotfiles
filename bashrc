@@ -5,10 +5,13 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+
+PATH=/usr/local/texlive/2011/bin/x86_64-linux:$PATH
+
 # User specific aliases and functions
 
 # color scheem
-cd /home/henry/dotfiles/solarized/ && ./set_dark.sh
+#cd /home/henry/dotfiles/solarized/ && ./set_dark.sh
 
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'

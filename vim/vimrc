@@ -19,6 +19,9 @@ set smartcase
 "turn numbers on
 set number
 
+"turn warping of by default
+set nowrap
+
 " Tab completion
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,node_modules/*
@@ -29,7 +32,7 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,node_modules/*
 set noequalalways
 
 "set leader
-let mapleader=","
+let mapleader="\\"
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
