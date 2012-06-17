@@ -1,12 +1,12 @@
 source ~/.nvm/nvm.sh
-nvm use 0.6.8
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-
+export NODE_ENV=testing
 PATH=/usr/local/texlive/2011/bin/x86_64-linux:$PATH
+path=/usr/local/sbin:$PATH
 
 # User specific aliases and functions
 
@@ -47,3 +47,5 @@ proml
 alias ls='ls -G'
 export CLICOLOR=1
 export LSCOLORS=Gxfxcxdxbxegedabagacad
+
+[[ -s "/Users/henry/.rvm/scripts/rvm" ]] && source "/Users/henry/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
